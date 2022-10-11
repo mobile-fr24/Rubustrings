@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'rubustrings'
+require 'rubustrings_fr24'
 
 filename = ARGV[0]
 parameter = ARGV.last
