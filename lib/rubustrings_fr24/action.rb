@@ -1,7 +1,7 @@
 
 require 'colored'
 
-module Rubustrings
+module Rubustrings_fr24
   class Action
 
     def validate(filenames, only_format)

@@ -5,7 +5,7 @@ require 'rubustrings_fr24'
 filename = ARGV[0]
 parameter = ARGV.last
 
-if Rubustrings.validate([filename], parameter == "--onlyformat")
+if Rubustrings_fr24.validate([filename], parameter == "--onlyformat")
     exit 0
 else 
     exit 1
