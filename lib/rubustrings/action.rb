@@ -137,10 +137,6 @@ module Rubustrings
       translation_key.chars.last == translation_value.chars.last
     end
 
-    def check_translation_length(translation_key, translation_value)
-      translation_value.length / translation_key.length < 3
-    end
-
     def validate_translation_line(file_name, line, only_format)
       line_number = 0
 
@@ -163,8 +159,6 @@ module Rubustrings
       match_value = match[2]
 
       log_output(:warning, file_name, line_number, "no translated string: #{line}") if match_value.empty?
-
-      log_output(:warning, file_name, line_number, "translation significantly large: #{line}") unless check_translation_length match_key, match_value
 
       validation_special_characters = validate_special_characters match_key, match_value
       log_output(:error, file_name, line_number, "variables mismatch: #{line}") unless validation_special_characters
