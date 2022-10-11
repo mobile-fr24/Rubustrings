@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.0.5] - 2022-10-11
+
+- removed check_translation_length validation rule
+
 ## [0.0.3] - 2018-01-22
 
 - Add option `--onlyformat` to check the syntax without any further validation
